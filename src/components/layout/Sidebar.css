@@ -1,0 +1,97 @@
+.Main{
+    width: 300px;
+    height: 1350px;
+    background-color: rgb(0, 19, 70)
+}
+
+
+.topHeader{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  25px;
+    color: white;
+}
+
+.topHeader img{
+    width: 50px;
+
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topHeader h3{
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(157, 164, 174, 1);
+}
+
+/* home */
+
+.home{
+    width: 100%;
+    height: auto;
+    color: rgba(157, 164, 174, 1);
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.home .div{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    gap: 10px;
+}
+
+
+.home .div img{
+    width: 30px;
+}
+
+
+.home .div h3{
+    font-size: 30px;
+}
+
+
+.h1{
+    color: rgba(157, 164, 174, 1);
+    font-weight: 700;
+    padding: 20px 25px;
+    font-family: cursive;
+}
+
+
+.side{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.side h3{
+    font-size: 30px;
+        color: rgba(157, 164, 174, 1);
+}
+
+.side p{
+        color: rgba(157, 164, 174, 1);
+        font-family: cursive;
+}
+
+.side h2{
+        color: rgba(157, 164, 174, 1);
+        
+}
