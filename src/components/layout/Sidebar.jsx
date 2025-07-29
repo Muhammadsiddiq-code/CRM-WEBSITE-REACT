@@ -1,21 +1,21 @@
 import React from "react";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
+
 import topHeader from "../../assets/images/Link (1).png";
 // import img1 from "../../assets/images/Nav → List → Item → Link → SVG.png"
 // import img2 from "../../assets/images/Frame (5).png"
 // import img3 from "../../assets/images/Nav → List → Item → Link → SVG (1).png"
 // import img4 from "../../assets/images/SVG.png"
 // import img5 from "../../assets/images/Nav → List → Item → Link → SVG.png";
-import { FaAngleRight, FaBitcoin, FaBoxOpen, FaHome, FaTruck, FaUserGraduate } from "react-icons/fa";
+import { FaAngleRight, FaBitcoin, FaBoxOpen, FaClipboardCheck, FaHome, FaServer, FaTruck, FaUserGraduate } from "react-icons/fa";
 import { SiGoogleanalytics } from "react-icons/si";
 import { TbDeviceAnalytics } from "react-icons/tb";
 import { RiAccountPinBoxFill } from "react-icons/ri";
-import { GoMoveToBottom } from "react-icons/go";
-import { CgCornerDownRight } from "react-icons/cg";
 import { MdOutlineKeyboardArrowRight, MdOutlineShoppingCart } from "react-icons/md";
-import { CiBookmarkCheck } from "react-icons/ci";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
-import { HiAcademicCap } from "react-icons/hi";
+import { FiMail, FiMessageSquare, FiShare2, FiUpload } from "react-icons/fi";
+import { HiOutlineDocumentText } from "react-icons/hi";
 
 const Sidebar = () => {
   return (
@@ -29,7 +29,7 @@ const Sidebar = () => {
           </nav>
         </div>
         <h1>
-          <GoMoveToBottom />
+          <MdOutlineKeyboardArrowRight />
         </h1>
       </div>
 
@@ -41,35 +41,35 @@ const Sidebar = () => {
           <p>Overview</p>
         </div>
 
-        <div className="div">
+        <Link to={"/analytics"} className="div">
           <h3>
             <SiGoogleanalytics />
           </h3>
           <p>Analytics</p>
-        </div>
+        </Link>
 
-        <div className="div">
+        <Link to={"/ECommerce"} className="div">
           <h3>
             <TbDeviceAnalytics />
           </h3>
           <p>E-Commerce</p>
-        </div>
+        </Link>
 
-        <div className="div">
+        <Link to={"/Crypto"} className="div">
           <h3>
             {" "}
             <FaBitcoin />
           </h3>
           <p>Crypto</p>
-        </div>
+        </Link>
 
-        <div className="div">
+        <Link to={"/Account"} className="div">
           <h3>
             {" "}
             <RiAccountPinBoxFill />
           </h3>
           <p>Account</p>
-        </div>
+        </Link>
       </div>
 
       <div className="h1">
@@ -159,6 +159,97 @@ const Sidebar = () => {
           <h2>
             <MdOutlineKeyboardArrowRight />
           </h2>
+        </div>
+      </div>
+
+      <div className="dt">
+        <p>Dashboard</p>
+        <p>Course</p>
+      </div>
+
+      <div className="side">
+        <div className="top">
+          <h3>
+            <FaServer />
+          </h3>
+          <nav>
+            <p>Job Listings</p>
+          </nav>
+        </div>
+        <h2>
+          <MdOutlineKeyboardArrowRight />
+        </h2>
+      </div>
+
+      <div className="side">
+        <div className="top">
+          <h3>
+            <FiShare2 />
+          </h3>
+          <nav>
+            <p>Social Media</p>
+          </nav>
+        </div>
+        <h2>
+          <MdOutlineKeyboardArrowRight />
+        </h2>
+      </div>
+
+      <div className="side">
+        <div className="top">
+          <h3>
+            <HiOutlineDocumentText />
+          </h3>
+          <nav>
+            <p>Blog</p>
+          </nav>
+        </div>
+        <h2>
+          <MdOutlineKeyboardArrowRight />
+        </h2>
+      </div>
+
+      <div className="side">
+        <div className="top">
+          <h3>
+            <FiUpload />
+          </h3>
+          <nav>
+            <p>File Manager</p>
+          </nav>
+        </div>
+      </div>
+
+      <div className="side">
+        <div className="top">
+          <h3>
+            <FaClipboardCheck />
+          </h3>
+          <nav>
+            <p>Kanban</p>
+          </nav>
+        </div>
+      </div>
+
+      <div className="side">
+        <div className="top">
+          <h3>
+            <FiMail />
+          </h3>
+          <nav>
+            <p>Mail</p>
+          </nav>
+        </div>
+      </div>
+
+      <div className="side">
+        <div className="top">
+          <h3>
+            <FiMessageSquare />
+          </h3>
+          <nav>
+            <p>Chat</p>
+          </nav>
         </div>
       </div>
     </div>
