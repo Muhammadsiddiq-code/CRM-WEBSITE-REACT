@@ -6,6 +6,12 @@ import img2 from "../assets/images/Button.png";
 import { FaArrowRight, FaRegBell } from 'react-icons/fa';
 import { IoPeopleOutline } from 'react-icons/io5';
 import Chart1 from '../ui/Chart1';
+import TrafficUI from '../ui/TrafficUI';
+import { CgDanger } from 'react-icons/cg';
+import { BiArrowToBottom } from 'react-icons/bi';
+import Table from "../components/materials/Table"
+import { BsSend } from 'react-icons/bs';
+import Chart2 from '../ui/Chart2';
 
 const Analytics = () => {
   return (
@@ -115,11 +121,93 @@ const Analytics = () => {
       <div className="traffic">
         <div className="card">
           <h1>Traffic Sources</h1>
-          
+          <TrafficUI/>
         </div>
-        <div className="card"></div>
+        <div className="card">
+          
+              <Table />
+
+
+
+        </div>
       </div>
 
+
+
+      {/* Most Visited Pages */}
+      
+
+
+        
+      <div className="const">
+        <div className="h3">
+          <h1>  Most Visited Pages</h1>
+        <h1><CgDanger /></h1>
+        </div>
+
+
+        <table className='table1'>
+          <thead>
+            <tr>
+
+            <th>Page Name</th>
+            <th>Visitors</th>
+            <th>Unique page visits</th>
+            <th>Bounce rate</th>
+            </tr>
+          </thead>
+          <tr>
+            <td> <BsSend />  /</td>
+
+            <td>95,847</td>
+            <td>8,584</td>
+            <td>16%</td>
+          </tr>
+
+          <tr>
+            <td> <BsSend /> /auth/login</td>
+            <td>7,500</td>
+            <td>648</td>
+            <td>5%</td>
+          </tr>
+
+          <tr>
+            <td> <BsSend />  /dashboard</td>
+            <td>85,406</td>
+            <td>568</td>
+            <td>2%</td>
+          </tr>
+
+          <tr>
+            <td><BsSend /> /blog/top-5-react-frameworks</td>
+            <td>75,050</td>
+            <td>12,322</td>
+            <td>12%</td>
+          </tr>
+
+          <tr>
+            <td><BsSend /> /blog/understand-programming-principles</td>
+            <td>68,003</td>
+            <td>11,645</td>
+            <td>10%</td>
+          </tr>
+
+          <tr>
+            <td><BsSend /> /blog/design-patterns</td> 
+            <td>49,510</td>
+            <td>10,259</td>
+            <td>8%</td>
+          </tr>
+
+          <tbody>
+
+          </tbody>
+        </table>
+
+        {/* <table>
+          <Chart2/>
+        </table> */}
+      </div>
 
 
 
