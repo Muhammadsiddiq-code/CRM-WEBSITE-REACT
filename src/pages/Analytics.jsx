@@ -8,7 +8,6 @@ import { IoPeopleOutline } from 'react-icons/io5';
 import Chart1 from '../ui/Chart1';
 import TrafficUI from '../ui/TrafficUI';
 import { CgDanger } from 'react-icons/cg';
-import { BiArrowToBottom } from 'react-icons/bi';
 import Table from "../components/materials/Table"
 import { BsSend } from 'react-icons/bs';
 import Chart2 from '../ui/Chart2';
@@ -77,8 +76,8 @@ const Analytics = () => {
                 <div className="box">
           <div className="char">
             <ul>
-              <li>Impressions</li>
-              <li>36,6K</li>
+              <li>Engagements</li>
+              <li>19K</li>
             </ul>
 
             <Chart1/>
@@ -96,8 +95,8 @@ const Analytics = () => {
                 <div className="box">
           <div className="char">
             <ul>
-              <li>Impressions</li>
-              <li>36,6K</li>
+              <li>Spent</li>
+              <li>$41.2K</li>
             </ul>
 
             <Chart1/>
@@ -141,9 +140,11 @@ const Analytics = () => {
         
       <div className="const">
         <div className="h3">
-          <h1>  Most Visited Pages</h1>
-        <h1><CgDanger /></h1>
+          <h1>  Most Visited Pages ---------------------- <CgDanger /></h1>
         </div>
+
+        <div className="char">
+
 
 
         <table className='table1'>
@@ -204,9 +205,11 @@ const Analytics = () => {
           </tbody>
         </table>
 
-        {/* <table>
+        <table className='ss'>
           <Chart2/>
-        </table> */}
+          </table>
+                  </div>
+
       </div>
 
 

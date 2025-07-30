@@ -177,7 +177,7 @@ header .card img{
 
 
 .const{
-        width: 62%;
+        width: 100%;
 }
 .table1 {
     width: 100%;
@@ -204,4 +204,14 @@ header .card img{
     justify-content: space-between;
     margin-bottom: 25px;
     color: rgba(108, 115, 127, 1);
+}
+
+
+.char{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    gap: 225px;
 }

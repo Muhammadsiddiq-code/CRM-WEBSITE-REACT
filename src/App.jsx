@@ -8,6 +8,7 @@ import Ecommerce from "./pages/Ecommerce";
 import Crypto from "./pages/Crypto";
 import Account from "./pages/Account";
 import Chart1 from "./ui/Chart1";
+import SalesPIE from "./ui/SalesPIE";
 // qolgan sahifalar...
 
 const App = () => {
